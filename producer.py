@@ -8,15 +8,10 @@ import time
 import random
 import os
 
-CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
-CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
-ACCESS_TOKEN_KEY = os.environ.get('ACCESS_TOKEN_KEY')
-ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
-
-
 if __name__ == "__main__":
     # Read arguments and configurations and initialize
     args = ccloud_lib.parse_args()
+    print(args)
     config_file = args.config_file
     topic = args.topic
     conf = ccloud_lib.read_ccloud_config(config_file)
