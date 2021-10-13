@@ -11,7 +11,14 @@
    sasl.username={API_KEY}
    sasl.password={API_SECRET}   
    ```
-7. Create env file named `config.env` this will be ignored by .gitignore
+7. Create env file named `config.env` with the below (replacing XXX with your actual keys). This will be ignored by .gitignore. 
+   ```
+   CONSUMER_KEY = "XXX"
+   CONSUMER_SECRET = "XXX"
+   ACCESS_TOKEN_KEY = "XXX"
+   ACCESS_TOKEN_SECRET = "XXX"
+
+   ```
 9. Build and run the Docker Container
   ```
   docker build -t kafka_demo .
