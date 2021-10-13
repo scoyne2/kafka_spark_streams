@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from TwitterAPI import TwitterAPI
 from confluent_kafka import Producer, KafkaError
@@ -6,6 +6,12 @@ import json
 import ccloud_lib
 import time
 import random
+import os
+
+CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
+CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
+ACCESS_TOKEN_KEY = os.environ.get('ACCESS_TOKEN_KEY')
+ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
 
 
 if __name__ == "__main__":
