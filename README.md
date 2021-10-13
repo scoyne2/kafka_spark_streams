@@ -1,5 +1,5 @@
 1. Get [Twitter API Credentials](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api)
-2. Create env file named `config.env` with the below (replacing XXX with your actual keys). This will be ignored by .gitignore. 
+2. Create env file named `.env` with the below (replacing XXX with your actual keys). This will be ignored by .gitignore. 
    ```
    CONSUMER_KEY = "XXX"
    CONSUMER_SECRET = "XXX"
