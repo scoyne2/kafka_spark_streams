@@ -4,14 +4,14 @@
 4. Load the Databricks Notebook
 5. Create your config file `vi ~/.confluent/python.config` replace HOST, API_KEY, API_SECRET with the values from Confluent Cloud
    ```
-   [kafka]
+   #kafka
    bootstrap.servers={HOST}:9092
    security.protocol=SASL_SSL
    sasl.mechanisms=PLAIN
    sasl.username={API_KEY}
    sasl.password={API_SECRET}
    
-   [twitter]
+   #twitter
    consumer_key={CONSUMER_KEY}
    consumer_secret={CONSUMER_SECRET}
    accessk_token_key={ACCESS_TOKEN_KEY}
