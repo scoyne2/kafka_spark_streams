@@ -9,17 +9,10 @@
    security.protocol=SASL_SSL
    sasl.mechanisms=PLAIN
    sasl.username={API_KEY}
-   sasl.password={API_SECRET}
-   
-   #twitter
-   consumer_key={CONSUMER_KEY}
-   consumer_secret={CONSUMER_SECRET}
-   accessk_token_key={ACCESS_TOKEN_KEY}
-   access_token_secret={ACCESS_TOKEN_SECRET}
-   
+   sasl.password={API_SECRET}   
    ```
-7. Create env file
-8. Build and run the Docker Container
+7. Create env file named `config.env` this will be ignored by .gitignore
+9. Build and run the Docker Container
   ```
   docker build -t kafka_demo .
   docker run -v ~/.confluent/python.config:/root/.confluent/librdkafka.config -it --rm kafka_demo bash
