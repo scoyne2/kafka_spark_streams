@@ -3,4 +3,7 @@
 3. Setup [DataBricks community cloud](https://databricks.com/try-databricks)
 4. Load the Databricks Notebook
 5. Create env file
-6. Docker build
+6. Build and run the Docker Container
+::
+docker build -t kafka_demo .
+
