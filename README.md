@@ -19,9 +19,4 @@
    ACCESS_TOKEN_SECRET = "XXX"
 
    ```
-9. Build and run the Docker Container
-  ```
-  docker build -t kafka_demo .
-  docker run -v ~/.confluent/python.config:/root/.confluent/librdkafka.config -it --rm kafka_demo bash
-  docker run -v $HOME/.confluent/librdkafka.config:/root/.confluent/librdkafka.config -it --rm cloud-demo-python bash
-  ```
+9. Build and run the Docker Container `bash run.sh`
