@@ -11,3 +11,7 @@ RUN pip3 install -U tox wheel setuptools virtualenv --cache-dir=/codefresh/volum
 
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
+
+COPY producer.py .
+CMD ["producer.py"]
+ENTRYPOINT ["python3"]
