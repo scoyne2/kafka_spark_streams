@@ -4,7 +4,7 @@
 4. Load the Databricks Notebook
 5. Create env file
 6. Build and run the Docker Container
-```
-docker build -t kafka_demo .
-docker run -it kafka_demo producer.py
-```
+  ```
+  docker build -t kafka_demo .
+  docker run -it kafka_demo producer.py
+  ```
