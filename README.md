@@ -6,5 +6,6 @@
 6. Build and run the Docker Container
   ```
   docker build -t kafka_demo .
-  docker run -it kafka_demo producer.py
+  docker run -v ~/.confluent/python.config:/root/.confluent/librdkafka.config -it --rm kafka_demo bash
+  docker run -v $HOME/.confluent/librdkafka.config:/root/.confluent/librdkafka.config -it --rm cloud-demo-python bash
   ```
