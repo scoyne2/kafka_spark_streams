@@ -10,9 +10,11 @@
 4. Create a [Kafka cluster in Confluent Cloud](https://docs.confluent.io/cloud/current/get-started/index.html#step-1-create-a-ak-cluster-in-ccloud)
 5. Create a [Kafka topic](https://docs.confluent.io/cloud/current/get-started/index.html#step-2-create-a-ak-topic) named `streaming_test_6` with 6 partitions.
 6. Get [api credentials](https://docs.confluent.io/cloud/current/access-management/authenticate/api-keys/api-keys.html) and 
-7. Setup [DataBricks community cloud](https://databricks.com/try-databricks)
-8. Load the Databricks Notebook
-9. Create your config file `vi ~/.confluent/python.config` replace HOST, API_KEY, API_SECRET with the values from Confluent Cloud
+7. Setup a [Databricks community cloud account](https://databricks.com/try-databricks)
+8. Create a [Databricks cluster](https://docs.databricks.com/clusters/create.html)
+9. Import the [kafka_test notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3402980763131908/2678721410506964/1622946240933120/latest.html)
+10. In the first cell of the notebook, replace the XXX with your values for `confluentApiKey`, `confluentSecret` and `host` which you will find in the Confluent UI in step 6
+11. Create a kafka config file by running `vi ~/.confluent/python.config`. In the file replace HOST, API_KEY, API_SECRET with the values from Confluent Cloud
    ```
    #kafka
    bootstrap.servers={HOST}:9092
