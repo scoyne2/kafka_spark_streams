@@ -6,10 +6,13 @@
    ACCESS_TOKEN_KEY = "XXX"
    ACCESS_TOKEN_SECRET = "XXX"
    ```
-3. Setup [Confluent Cloud Free](https://www.confluent.io/get-started/) and get [api credentials](https://docs.confluent.io/cloud/current/access-management/authenticate/api-keys/api-keys.html) and [create topic](https://docs.confluent.io/cloud/current/get-started/index.html#step-2-create-a-ak-topic) with 6 partitions.
-4. Setup [DataBricks community cloud](https://databricks.com/try-databricks)
-5. Load the Databricks Notebook
-6. Create your config file `vi ~/.confluent/python.config` replace HOST, API_KEY, API_SECRET with the values from Confluent Cloud
+3. Create a free [Confluent Cloud account](https://www.confluent.io/get-started/)
+4. Create a [Kafka cluster in Confluent Cloud](https://docs.confluent.io/cloud/current/get-started/index.html#step-1-create-a-ak-cluster-in-ccloud)
+5. Create a [Kafka topic](https://docs.confluent.io/cloud/current/get-started/index.html#step-2-create-a-ak-topic) named `streaming_test_6` with 6 partitions.
+6. Get [api credentials](https://docs.confluent.io/cloud/current/access-management/authenticate/api-keys/api-keys.html) and 
+7. Setup [DataBricks community cloud](https://databricks.com/try-databricks)
+8. Load the Databricks Notebook
+9. Create your config file `vi ~/.confluent/python.config` replace HOST, API_KEY, API_SECRET with the values from Confluent Cloud
    ```
    #kafka
    bootstrap.servers={HOST}:9092
